@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;section id="results" style="padding: 50px 20px; background: #f4f4f4; text-align: center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 style="color: #004aad; margin-bottom: 10px;"&gt;The Supreme Difference&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p style="margin-bottom: 30px; color: #555;"&gt;Slide the bar to see how we blast away Decatur red clay!&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="slider-container" style="position: relative; width: 100%; max-width: 600px; height: 400px; margin: 0 auto; overflow: hidden; border-radius: 15px; border: 4px solid #fff; shadow: 0 4px 15px rgba(0,0,0,0.2);"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://via.placeholder.com/600x400/8B0000/FFFFFF?text=DIRTY+BEFORE" style="width: 100%; height: 100%; object-fit: cover; display: block;"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="after-image" id="afterImage" style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; border-right: 3px solid #004aad;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://via.placeholder.com/600x400/004aad/FFFFFF?text=SUPREME+AFTER" style="width: 600px; height: 400px; object-fit: cover; display: block;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="range" min="0" max="100" value="50" id="slider" style="position: absolute; top: 50%; left: 0; width: 100%; transform: translateY(-50%); cursor: pointer; opacity: 0.8;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const slider = document.getElementById('slider');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const afterImage = document.getElementById('afterImage');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>slider.oninput = function() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>afterImage.style.width = this.value + "%";</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p1">&lt;/script&gt;</p>
+</body>
+</html>
