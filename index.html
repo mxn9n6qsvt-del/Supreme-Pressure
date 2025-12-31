@@ -78,22 +78,27 @@
 
 </body>
 </html>
-<div class="slider-container">
-    <div class="slide active">
-        <img src="your-image1.jpg" alt="Pressure Washing Before">
+<div class="instagram-carousel">
+    <div class="carousel-track">
+        <div class="insta-slide">
+            <img src="work-1.jpg" alt="Pressure Washing Service">
+        </div>
+
+        <div class="insta-slide">
+            <video muted loop playsinline onclick="this.paused ? this.play() : this.pause()">
+                <source src="work-video.mp4" type="video/mp4">
+            </video>
+            <div class="video-hint">Tap to Play</div>
+        </div>
+
+        <div class="insta-slide">
+            <img src="work-2.jpg" alt="Clean Driveway">
+        </div>
     </div>
 
-    <div class="slide">
-        <video autoplay muted loop playsinline>
-            <source src="your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
     </div>
-
-    <div class="slide">
-        <img src="your-image2.jpg" alt="Pressure Washing After">
-    </div>
-
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
 </div>
